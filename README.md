@@ -1,12 +1,65 @@
-# React + Vite
+✨ Features
+- 📤 Upload any image containing text (PNG, JPG, etc.)
+- 🔍 Extracts text using Tesseract OCR
+- 🧠 Summarizes extracted text using HuggingFace Transformers
+- 🖥️ Frontend built with React + TailwindCSS (Vite)
+- 🚀 Backend powered by FastAPI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🗂️ Project Structure
 
-Currently, two official plugins are available:
+🚀 Getting Started
+- Python 3.10+
+- Node.js (v18+)
+- Tesseract OCR installed on your machine:
+  - Download for Windows: https://github.com/tesseract-ocr/tesseract
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔧 Backend Setup (FastAPI + HuggingFace)
+cd Backend
+python -m venv venv
+# Activate:
+# PowerShell:
+Scripts\Activate.ps1
 
-## Expanding the ESLint configuration
+# CMD:
+venv\Scripts ctivate
+# macOS/Linux:
+source venv/bin/activate
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+pip install -r requirements.txt
+
+uvicorn main:app --reload
+
+🎨 Frontend Setup (Vite + React)
+
+cd Image-Summarizer
+npm install
+npm run dev
+
+📦 Tech Stack
+Frontend        | Backend          | NLP/OCR
+----------------|------------------|----------------------------
+React + Vite    | FastAPI (Python) | pytesseract, HuggingFace Transformers
+Tailwind CSS    | Uvicorn server   | T5 / BART Summarization Models
+
+
+📌 To Do / Future Enhancements
+- [ ] PDF export of summary
+- [ ] Dark mode toggle
+- [ ] Deploy on Render (backend) and Vercel (frontend)
+- [ ] Add toast notifications
+- [ ] Use DistilBART for faster summarization
+
+📌 To Do / Future Enhancements
+- [ ] PDF export of summary
+- [ ] Dark mode toggle
+- [ ] Deploy on Render (backend) and Vercel (frontend)
+- [ ] Add toast notifications
+- [ ] Use DistilBART for faster summarization
+
+🧑‍💻 Author
+Taapopi Ndeshipanda
+GitHub: https://github.com/taapopi
+
+🛡️ License
+This project is licensed under the MIT License.
