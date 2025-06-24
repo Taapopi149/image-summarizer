@@ -7,6 +7,9 @@
 
 🗂️ Project Structure
 
+![Screenshot (277)](https://github.com/user-attachments/assets/44fef2f1-5bbb-44bf-9c01-c6f77e69ed35)
+
+
 🚀 Getting Started
 - Python 3.10+
 - Node.js (v18+)
