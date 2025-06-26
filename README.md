@@ -17,20 +17,26 @@
   - Download for Windows: https://github.com/tesseract-ocr/tesseract
 
 #🔧 Backend Setup (FastAPI + HuggingFace)
+
 cd Backend
 
-Create virtual environment
+**Create virtual environment**
+
 python -m venv venv
 
 
 **Activate (choose one)**
 
-PowerShell
+**PowerShell**
+
 .\venv\Scripts\Activate.ps1
-CMD
+
+**CMD**
+
 venv\Scripts\activate.bat
 
-macOS/Linux
+**macOS/Linux**
+
 source venv/bin/activate
 
 **Install dependencies**
