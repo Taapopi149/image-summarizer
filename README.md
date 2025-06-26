@@ -16,24 +16,28 @@
 - Tesseract OCR installed on your machine:
   - Download for Windows: https://github.com/tesseract-ocr/tesseract
 
-🔧 Backend Setup (FastAPI + HuggingFace)
+#🔧 Backend Setup (FastAPI + HuggingFace)
 cd Backend
-python -m venv venv
-# Activate:
-# PowerShell:
-Scripts\Activate.ps1
 
-# CMD:
-venv\Scripts ctivate
-# macOS/Linux:
+Create virtual environment
+python -m venv venv
+**
+Activate (choose one)**
+PowerShell
+.\venv\Scripts\Activate.ps1
+CMD
+venv\Scripts\activate.bat
+
+macOS/Linux
 source venv/bin/activate
 
-
+**Install dependencies**
 pip install -r requirements.txt
 
+**Run development server**
 uvicorn main:app --reload
 
-🎨 Frontend Setup (Vite + React)
+#🎨 Frontend Setup (Vite + React)
 
 cd Image-Summarizer
 npm install
@@ -53,16 +57,8 @@ Tailwind CSS    | Uvicorn server   | T5 / BART Summarization Models
 - [ ] Add toast notifications
 - [ ] Use DistilBART for faster summarization
 
-📌 To Do / Future Enhancements
-- [ ] PDF export of summary
-- [ ] Dark mode toggle
-- [ ] Deploy on Render (backend) and Vercel (frontend)
-- [ ] Add toast notifications
-- [ ] Use DistilBART for faster summarization
+
 
 🧑‍💻 Author
 Taapopi Ndeshipanda
 GitHub: https://github.com/taapopi
-
-🛡️ License
-This project is licensed under the MIT License.
