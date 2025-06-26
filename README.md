@@ -21,8 +21,10 @@ cd Backend
 
 Create virtual environment
 python -m venv venv
-**
-Activate (choose one)**
+
+
+**Activate (choose one)**
+
 PowerShell
 .\venv\Scripts\Activate.ps1
 CMD
@@ -32,9 +34,11 @@ macOS/Linux
 source venv/bin/activate
 
 **Install dependencies**
+
 pip install -r requirements.txt
 
 **Run development server**
+
 uvicorn main:app --reload
 
 #🎨 Frontend Setup (Vite + React)
